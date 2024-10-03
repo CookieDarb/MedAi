@@ -10,7 +10,7 @@ questions = [
     "What is your age?",
     "Are you feeling well? (Yes/No)",
 ]
-print("hello")
+print("hello world!")
 # Define the symptoms
 symptoms = [
     "fever", "running_nose", "Cough", "Eye Irritation", "Dizziness", 
