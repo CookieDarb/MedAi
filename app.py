@@ -10,12 +10,12 @@ questions = [
     "What is your age?",
     "Are you feeling well? (Yes/No)",
 ]
-print("hello world!")
+
 # Define the symptoms
 symptoms = [
-    "fever", "running_nose", "Cough", "Eye Irritation", "Dizziness", 
-    "Rashes", "Stomach Cramps", "Vomiting", "Nausea", 
-    "Shortness of Breath", "Chills", "Body Aches", "Fatigue", 
+    "fever", "running_nose", "Cough", "Eye Irritation", "Dizziness",
+    "Rashes", "Stomach Cramps", "Vomiting", "Nausea",
+    "Shortness of Breath", "Chills", "Body Aches", "Fatigue",
     "Headache", "Sore Throat"
 ]
 
@@ -48,7 +48,7 @@ def get_response():
         response = questions[0]
         next_step=1 if user_message.lower() == 'yes' else 6
     if step == 1:
-        
+
         next_step = 2 if user_message.lower() == 'yes' else 0 if user_message.lower() == 'no' else 0
         response =questions[1]
 
