@@ -35,18 +35,18 @@ def check_symptom(user_message, symptom):
 @app.route('/get-response', methods=['POST'])
 def get_response():
     data = request.json
-    user_message = data.get('message', '')
+    print(data)
+    user_message = data.get('message','')
     step = data.get('step', 0)
     name = data.get('name', '')
     age = data.get('age', '')
-    response = ""
+    response = " "
     next_step = step
-
     print(step)
     print(data)
     if step == 0:
         response = questions[0]
-        next_step=1 if user_message.lower() == 'yes' else 6
+        next_step=1 if user_message.lower() == 'yes' else 1
     if step == 1:
 
         next_step = 2 if user_message.lower() == 'yes' else 0 if user_message.lower() == 'no' else 0

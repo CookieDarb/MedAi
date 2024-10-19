@@ -9,7 +9,7 @@ questions = [
     "What is your age?",
     "Are you feeling well? (Yes/No)",
 ]
-Symptoms=['fever','running_nose','Cough','Eye Irritation','Dizziness','Rashes','Stomach Cramps','Vomiting','Nausea',              'Shortness of Breath','Chills','Body Aches','Fatigue','Headache','Sore Throat']
+Symptoms=['fever','running_nose','Cough','Eye Irritation','Dizziness','Rashes','Stomach Cramps','Vomiting','Nausea','Shortness of Breath','Chills','Body Aches','Fatigue','Headache','Sore Throat']
 
 
 # Home route to serve the HTML page
@@ -251,7 +251,7 @@ def get_response():
         else:
             response = "Please answer with 'yes' or 'no'."
             next_step = 15  # Repeat the same question
-            response = "Do you have a headache?"
+        response = "Do you have a headache?"
 
     elif step == 16:
         
@@ -281,6 +281,7 @@ def get_response():
         else:
             response = "Please answer with 'yes' or 'no'."
             next_step = 17  # Repeat the same question
+        response = "Do you have a Cough?"
     
     elif step ==18 :
         if user_message.lower() == 'yes':
