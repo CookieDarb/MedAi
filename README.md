@@ -1,3 +1,5 @@
+# MedAi
+
 A Flask-based chatbot application that helps users identify possible diseases based on their symptoms. The chatbot asks users a series of questions regarding their symptoms, and then provides a diagnosis based on the input. It uses a set of predefined symptoms to assess the user's condition and recommend possible diseases along with their cures.
 
 ## Features
